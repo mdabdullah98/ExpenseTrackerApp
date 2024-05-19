@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-expense-div {
+  width: 100%;
+  /* padding: 1rem 0; */
+  position: relative;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.main-expense-div .brand-logo .content h1 {
+  text-transform: capitalize;
+}
+.main-expense-div .brand-logo .content img {
+  border-radius: 1.5rem;
+}
+.login-logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-logout .logout-btn {
+  cursor: pointer;
+  margin: 0 2rem;
+}
+.menu {
+  display: none;
+}
+.premium {
+  margin-top: 1rem;
+  position: relative;
+  padding: 0.2rem 1rem;
+  border-radius: 2rem;
+  background: rgb(254, 223, 112);
+  overflow: hidden;
+  box-shadow: 0 0 0.5rem rgb(254, 226, 127), 0 0 2rem rgb(254, 229, 139);
+}
+.premium::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+
+  animation: shine-premium 1.8s infinite ease-in-out;
+}
+
+@keyframes shine-premium {
+  from {
+    width: 0;
+  }
+  to {
+    width: 120%;
+    background-color: rgba(251, 239, 72, 0);
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-expense-div {
+    width: 100%;
+    padding: 1rem;
+    background: rgb(240, 237, 237);
+    border-radius: 0.4rem;
+    transform: translateY(-50rem);
+    max-height: 0;
+  }
+  .main-expense-div.active {
+    animation: menu 1s forwards cubic-bezier(0.075, 0.82, 0.165, 1);
+    max-height: 20%;
+  }
+  @keyframes menu {
+    0% {
+      transform: translateY(-30rem);
+    }
+
+    100% {
+      transform: translateY(0rem);
+    }
+  }
+  .main-expense-div .brand-logo {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-expense-div .brand-logo .content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main-expense-div .brand-logo .content img {
+    margin: 1.5rem 0;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 100;
+  }
+}

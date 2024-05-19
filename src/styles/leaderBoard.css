@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.leaderboard-main {
+  width: 80%;
+  margin: 3rem auto;
+}
+.leaderboard-main button {
+  outline: none;
+  border: none;
+  background: rgb(217, 233, 115);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  text-transform: capitalize;
+}
+.leaderboard-main button.btn-bg {
+  background: rgb(215, 233, 255);
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.5rem 0.5rem -0.5rem red;
+}
+.leaderboard-content {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem; */
+}
+.leaderboard-content div {
+  background: lightcoral;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+}
+.leaderboard-content div label {
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.leaderboard-content div label li {
+  list-style: none;
+  font-size: 1.2rem;
+  text-align: center;
+}

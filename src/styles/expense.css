@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.expense-income-details {
+  width: 80%;
+  margin: 5rem auto;
+}
+.expense-income-details h4 {
+  text-transform: capitalize;
+  text-align: center;
+  color: rgb(44, 200, 200);
+  font-weight: bold;
+}
+.expense-income-details .expense-cards {
+  margin: 1.5rem 0;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem; */
+}
+
+/* .expense-income-details .inner-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.8rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: rgb(23, 36, 36);
+} */
+/* .expense-income-details .inner-card div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.7rem;
+  color: #fff;
+  border: 1px solid white;
+} */
+/* .expense-income-details .inner-card div span:nth-child(1) {
+  color: rgb(255, 183, 0);
+  margin-right: 0.5rem;
+} */
+.total-expense-income {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background: rgb(239, 254, 254);
+  border-radius: 1rem;
+}

@@ -1,0 +1,39 @@
+.pagination-main-div {
+  width: 100%;
+
+  margin: 3rem 0;
+}
+.pagination-main-div button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  background: black;
+  border-radius: 0.3rem;
+  margin: 0 0.1rem;
+  color: #fff;
+  transition: 0.3s;
+  position: relative;
+}
+
+.pagination-main-div button.active {
+  background: rgb(246, 236, 93);
+  color: #000;
+}
+.pagination-main-div .indiactor {
+  display: none;
+}
+.pagination-main-div .indiactor.active {
+  position: absolute;
+  top: -0.95rem;
+  left: 0.3rem;
+  display: block;
+  font-size: 1.6rem;
+  color: blue;
+}
+
+#row_per_page {
+  background-color: rgb(251, 218, 126);
+}
+#row_per_page option {
+  border: none;
+  outline: none;
+}

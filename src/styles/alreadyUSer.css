@@ -1,0 +1,15 @@
+.already-user {
+  width: 65%;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 6rem;
+  border-radius: 17px;
+  background: linear-gradient(145deg, #ded0fd, #cdc1f7);
+  box-shadow: 25px 25px 50px #aa9cd9, -25px -25px 50px #e6d4ff;
+}
+
+@media screen and (max-width: 600px) {
+  .already-user {
+    width: 90%;
+  }
+}
